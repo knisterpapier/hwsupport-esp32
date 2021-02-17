@@ -50,6 +50,7 @@ pir = Pin(33, Pin.IN)
 
 pir.irq(trigger=Pin.3, handler=handle_interrupt)
 
+#example potentiometer
 while True:
   if motion:
     print('Motion detected! Interrupt caused by:', interrupt_pin)
