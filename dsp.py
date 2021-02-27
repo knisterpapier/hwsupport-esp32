@@ -11,7 +11,7 @@ if __name__ == '__main__':
     s.start()
 
     a = Input(chnl=0)
-    chorus = Chorus(a, depth=0.7, feedback=0.9, bal=0.5).out()
+    d = WGVerb(a, feedback=[.90,.75], cutoff=8000, bal=.25, mul=.3).out()
 
 
     s.gui(locals())
